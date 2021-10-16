@@ -1,0 +1,157 @@
+    1  echo "it's hard to do that"
+    2  ehco 'it'\'s hard to do that'
+    3  ehco 'it'\''s hard to do that'
+    4  echo 'it'\''s hard to do that'
+    5  echo '"Пример текста в кавычках"'
+    6  whoami
+    7  whoaim
+    8  whoami
+    9  echo "Hello World"
+   10  date
+   11  cal
+   12  man cal
+   13  cal --three
+   14  cal -3
+   15  history
+   16  clear
+   17  echo "Hello World"
+   18  pwd
+   19  cd .
+   20  cd /
+   21  cd ..
+   22  pwd
+   23  ls
+   24  ls /var
+   25  las /var/games/
+   26  ls /var/games/
+   27  cd ~
+   28  cd ..
+   29  pwd
+   30  ls
+   31  cd
+   32  ls -l 
+   33  man ls
+   34  cd
+   35  mkdir fruits
+   36  cd /
+   37  mdir ~/animals
+   38  mkdir ~/animals
+   39  touch /tmp/temp
+   40  cd
+   41  cd fruits/
+   42  touch apple
+   43  touch banana
+   44  touch pineaple
+   45  touch lion
+   46  touch ~/animals/cat.txt
+   47  touch ~/animals/dog.txt
+   48  touch ~/animals/elephant.txt
+   49  ls -i
+   50  stat apple 
+   51  lsblk
+   52  sudo debugfs -R 'stat <18014803>' /dev/sda2
+   53  sudo debugfs -R 'stat <18014803>' /dev/sda
+   54  ls b*
+   55  ls a*
+   56  ls [bi]*
+   57  ls b* i*
+   58  cp /etc/passwd ~
+   59  cat /etc/issue
+   60  cp /etc/issue ~/fruits/apple
+   61  cat apple 
+   62  mv lion ~/animals/
+   63  mv pineaple pineapple 
+   64  ls
+   65  man wc
+   66  wc -l /ect/passwd
+   67  wc -l /etc/passwd
+   68  cd
+   69  ln -s /etc/passwd passwd_link
+   70  ln .bash_history history_hard
+   71  ln ~/.bash_history history_hard
+   72  ls
+   73  ls -l
+   74  ls -a
+   75  ln ~/.bash_history history_hard
+   76  ls -l
+   77  rm fruits/apple 
+   78  ls fruits/
+   79  mkdir rmme
+   80  rmdir rmme
+   81  ls
+   82  rmdir fruits
+   83  rm -fr fruits
+   84  ls
+   85  ls /etc/passwd
+   86  man cat
+   87  cat /etc/passwd /var/log/boot.log 
+   88  cp /etc/init.d ~
+   89  cp -r /etc/init.d ~
+   90  ls
+   91  rm -fr init.d
+   92  ls
+   93  clear
+   94  man cut
+   95  man sort
+   96  cut /etc/passwd
+   97  cat /etc/passwd
+   98  cut -d: -f1,3,4 /etc/passwd | column -ts | less
+   99  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+  100  man column
+  101  cut -d: -f1 /etc/passwd | sort
+  102  man cut
+  103  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+  104  cut -d: -f1,3 /etc/passwd | column -ts: | less
+  105  grep :/bin/bash /etc/passwd | wc -l
+  106  man grep
+  107  grep :/bin/bash /etc/passwd | sort 
+  108  grep :/bin/bash /etc/passwd | cut -d: f1 |sort 
+  109  grep :/bin/bash /etc/passwd | cut -d: -f1 |sort 
+  110  man sort
+  111  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort -r 
+  112  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 | head -n 25
+  113  man top
+  114  man sort
+  115  top -b -n1
+  116  top -b -n1 | sort k1
+  117  top -b -n1 | sort -k1
+  118  top -b -n1 | sort -k
+  119  top -b -n1 | sort -k2
+  120  sort /etc/passwd
+  121  sort -k1 /etc/passwd | tr ":" " "
+  122  cut -d: -f1,7 /etc/passwd | sort -k1 | column -ts:
+  123  yum install -y git
+  124  sudo yum install -y git
+  125  cd /usr/share/doc/git-*
+  126  cat user-manual.txt | tr ' ' '\012' 
+  127  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]'
+  128  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]'
+  129  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]'
+  130  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+  131  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5
+  132  tr '[:upper:]' '[:lower:]' < user-manual.txt | tr -d'[:punct:]' \n\t | fold -w1 | sort | uniq -c | sort -rn | head -5
+  133  tr '[:upper:]' '[:lower:]' < user-manual.txt | tr -d '[:punct:]' \n\t | fold -w1 | sort | uniq -c | sort -rn | head -5
+  134  tr '[:upper:]' '[:lower:]' < user-manual.txt | tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+  135  tr -cs '[:alpha:]' '\n' < user-manual.txt | less | grep -E ........ | sort | uniq -c | sort -rn | head
+  136  ping ya.ru
+  137  ping youtube.com
+  138  ping www.youtube.com
+  139  man ping
+  140  ping ya.ru
+  141  ping 4.2.2.2
+  142  ping 213.180.204.8
+  143  ping ya.ru
+  144  curl wttr.in
+  145  hostname -I
+  146  curl ifconfig.me
+  147  pwd
+  148  wget http://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
+  149  ls
+  150  cat README-ru.md 
+  151  less README-ru.md 
+  152  sudo less /var/log/messages 
+  153  less /var/log/messages 
+  154  id
+  155  whoami
+  156  hisroty > lab1_history.txt
+  157  history > lab1_history.txt
