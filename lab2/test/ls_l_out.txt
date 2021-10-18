@@ -1,0 +1,30 @@
+итого 0
+-rw-rw-r--. 1 timeslort timeslort 0 окт 18 16:29 file
+-rw-rw-r--. 1 timeslort timeslort 0 окт 18 16:29 ls_l_out.txt
+итого 4
+----------. 1 timeslort timeslort   0 окт 18 16:29 file
+-rw-rw-r--. 1 timeslort timeslort 135 окт 18 16:29 ls_l_out.txt
+итого 4
+--w-------. 1 timeslort timeslort   0 окт 18 16:29 file
+-rw-rw-r--. 1 timeslort timeslort 274 окт 18 16:30 ls_l_out.txt
+итого 4
+--w-r-----. 1 timeslort timeslort   0 окт 18 16:29 file
+-rw-rw-r--. 1 timeslort timeslort 413 окт 18 16:31 ls_l_out.txt
+итого 4
+-rw-r-----. 1 timeslort timeslort   0 окт 18 16:29 file
+-rw-rw-r--. 1 timeslort timeslort 552 окт 18 16:31 ls_l_out.txt
+итого 4
+drw-rw-rw-. 2 timeslort timeslort  22 окт 18 16:32 dir
+-rw-r-----. 1 timeslort timeslort   0 окт 18 16:29 file
+-rw-rw-r--. 1 timeslort timeslort 691 окт 18 16:31 ls_l_out.txt
+итого 4
+drw-rw-rw-. 2 timeslort timeslort  22 окт 18 16:32 dir
+-rw-r-----. 1 timeslort timeslort   0 окт 18 16:29 file
+-rw-------. 1 timeslort timeslort   0 окт 18 16:33 file1
+-rw-rw-r--. 1 timeslort timeslort 888 окт 18 16:32 ls_l_out.txt
+итого 4
+drw-rw-rw-. 2 timeslort timeslort   22 окт 18 16:32 dir
+-rw-r-----. 1 timeslort timeslort    0 окт 18 16:29 file
+-rw-------. 1 timeslort timeslort    0 окт 18 16:33 file1
+-rw-rw-rw-. 1 timeslort timeslort    0 окт 18 16:33 file2
+-rw-rw-r--. 1 timeslort timeslort 1145 окт 18 16:33 ls_l_out.txt
