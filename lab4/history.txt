@@ -1,0 +1,18 @@
+  297  ls -l /dev/sda{,[123]}
+  298  lsblk --list
+  299  cat /proc/diskstats
+  300  cat /proc/devices
+  301  dd if=/dev/zero of=./fs.img bs=1M count=10
+  302  losetup --find --show ./fs.img
+  303  losetup --list
+  304  mkfs -t ext4 /dev/loop0
+  305  blkid /dev/loop0
+  306  mount /dev/loop0/mnt
+  307  mount | grep /mnt
+  308  df -h /mnt
+  309  df -hi /mnt
+  310  umount /dev/loop0
+  311  tune2fs -l /dev/loop0
+  312  losetup --detach /dev/loop0
+  313  losetup --list
+  314  history > history.txt
